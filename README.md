@@ -1,7 +1,7 @@
 # VScode_CMake_MinGW
 ## Introduce
 This is a sample project which is according to the posts
-[VScode+MinGW+CMake 設置](https://eloquent-semolina-12335f.netlify.app/post/win10-vscode-mingw-cmake/). But in this project, I modify the "CMakeLists.txt" file a little bit to observe the function of "CMakeLists.txt".
+[VScode+MinGW+CMake 設置](https://eloquent-semolina-12335f.netlify.app/post/win10-vscode-mingw-cmake/). But in this project, I modify the "CMakeLists.txt" file a little bit and change the structure of this project by adding some files to observe the function of "CMakeLists.txt".
 
 You can use "git clone" or "download as zip" to get this project.
 
