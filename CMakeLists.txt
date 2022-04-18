@@ -1,0 +1,23 @@
+cmake_minimum_required(VERSION 3.0)
+project(test_include)
+
+set(SRC_DIR src)
+set(INC_DIR include)
+set(MAIN_DIR main)
+
+
+set(CMAKE_BUILD_TYPE Debug)
+
+set(CMAKE_C_FLAGS "-Wall -Werror")
+
+set(CMAKE_VERBOSE_MAKEFILE true)
+
+aux_source_directory(${INC_DIR} head)
+aux_source_directory(${SRC_DIR} source)
+
+include_directories(${INC_DIR})#讓CMake知道在編譯的時候有一個存放檔案的路徑
+include_directories(${SRC_DIR})
+
+add_library(libs ${head} ${source})
+add_executable(main ${MAIN_DIR}/main.c)
+target_link_libraries(main libs)
