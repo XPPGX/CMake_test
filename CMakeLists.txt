@@ -6,9 +6,9 @@ set(INC_DIR include)
 set(MAIN_DIR main)
 
 
-set(CMAKE_BUILD_TYPE Debug)
-
-set(CMAKE_C_FLAGS "-Wall -Werror")
+set(CMAKE_BUILD_TYPE "DEBUG")
+set(CMAKE_CXX_FLAGS_DEBUG "$ENV{CXXFLAGS} -O0 -Wall -g -ggbb")
+set(CMAKE_CXX_FLAGS_RELEASE "$ENV{CXXFLAGS} -O3 -Wall")
 
 set(CMAKE_VERBOSE_MAKEFILE true)
 
